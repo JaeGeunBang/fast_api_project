@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Query, Path
 from enum import Enum
 from typing import Optional
 from pydantic import BaseModel
@@ -92,3 +92,19 @@ async def create_item(item_id: int, item: Item, q: Optional[str] = None):
     if q:
         result.update({"q": q})
     return result
+
+# Validations (q query는 4~50 자리 수를 가져야 한다.)
+@app.get("/items3/")
+async def read_items(q: Optional[str] = Query(None, title="query string", description="description", alias="item-query",regex="^fixedquery$", min_length=4, max_length=50)):
+    result = {"items": [{"item_id": "Foo"}, {"item_id": "Bar"}]}
+    if q:
+        result.update({"q": q})
+    return result
+
+# Validations (숫자 검증)
+@app.get("/items4/")
+async def read_items(*, item_id: int = Path(..., title="The ID of the item to get", ge=1), q: str):
+    results = {"item_id": item_id}
+    if q:
+        results.update({"q": q})
+    return results
