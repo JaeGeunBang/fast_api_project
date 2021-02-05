@@ -6,3 +6,8 @@
 
 - 완료 여부
   - [x] first step 
+  - [x] path parameter
+  - [x] query parameter
+  - [x] request body
+  - [x] string validation
+  - [x] numeric validation
