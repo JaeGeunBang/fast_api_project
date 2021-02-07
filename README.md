@@ -25,6 +25,7 @@
 - [main3.py](https://github.com/JaeGeunBang/fast_api_project/blob/main/main3.py)
 
   - Schema Extra - Example
+  - Extra Data Type
 
 - 
 
