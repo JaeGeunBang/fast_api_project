@@ -1,3 +1,13 @@
+
+"""
+Peewee를 통해 Relational DB를 생성한다.
+Peewee란?
+  - simple and small ORM (Object-Releational Mapping)
+Peewee 특징
+  - Peewee는 async 처리를 위해 디자인되지 않았음.
+  - non-async 기반으로 어플리케이션을 간단하게 개발하고 싶다면 사용할것.
+
+"""
 from contextvars import ContextVar
 
 import peewee
@@ -17,7 +27,7 @@ class PeeweeConnectionState(peewee._ConnectionState):
     def __getattr__(self, name):
         return self._state.get()[name]
 
-
+# db 생성 코드 (sqlite db를 생성)
 db = peewee.SqliteDatabase(DATABASE_NAME, check_same_thread=False)
 
 db._state = PeeweeConnectionState()

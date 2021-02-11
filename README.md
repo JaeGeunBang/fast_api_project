@@ -6,29 +6,28 @@
   
 - https://fastapi.tiangolo.com/tutorial/first-steps/
   
-- [main.py](https://github.com/JaeGeunBang/fast_api_project/blob/main/main.py)
-
+- basic/
+  
+  - main.py
   - first step 
-  - path parameter
-  - query parameter
-  - request body
-  - string validation
-  - numeric validation
-
-- [main2.py](https://github.com/JaeGeunBang/fast_api_project/blob/main/main2.py)
-
+    - path parameter
+    - query parameter
+    - request body
+    - string validation
+    - numeric validation
+  - main2.py
   - Body - Multiple Parameter 
-
+    
   - Body - Field
-  - Body - Nested Models
-
-- [main3.py](https://github.com/JaeGeunBang/fast_api_project/blob/main/main3.py)
-
+    - Body - Nested Models
+  - main3.py
   - Schema Extra - Example
-  - Extra Data Type
+    - Extra Data Type
+  
+- advanced/
 
-- 
+  - SQL Database with Peewee
 
   
-
+  
   
