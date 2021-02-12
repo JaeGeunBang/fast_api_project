@@ -35,5 +35,6 @@
   
 - Alembic
   - SQLAlchemy에서 DB Migration을 위한 툴 (https://alembic.sqlalchemy.org/en/latest/)
-  
- 
+
+- Middleware
+  - middleware는 각 요청에 대해 항상 실행되는 함수로 기존 yield를 사용할수 없을때 middleware를 사용한다.
