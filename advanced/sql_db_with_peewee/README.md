@@ -1,4 +1,4 @@
-## sql_app
+## sql_db with peewee
 
 - SQL Databases with Peewee (Relational DB)
   - Peewee와 Releational DB 연동

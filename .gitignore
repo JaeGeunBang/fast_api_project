@@ -3,3 +3,4 @@
 __pycache__/
 advanced/*.db
 basic/multiple_files/app/__pycache__
+basic/*.db
