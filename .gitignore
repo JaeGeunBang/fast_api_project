@@ -2,5 +2,7 @@
 .idea/
 __pycache__/
 advanced/*.db
+advanced/asyncSQL_databases/*.db
+advanced/asyncSQL_databases/__pycache__
 basic/multiple_files/app/__pycache__
 basic/*.db
