@@ -9,6 +9,18 @@ from .database import SessionLocal, engine
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
+"""
+# Dependency
+Middleware를 쓰기 전 이처럼 Yield 기반의 함수를 사용했음.
+Yield를 쓰면, 다른 함수들과 의존 관계가 되어버린다.
+이를 분리하기 위해 아래 Middleware를 쓴다고 보면됨
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+"""
 
 @app.middleware("http")
 async def db_session_middleware(request: Request, call_next):
