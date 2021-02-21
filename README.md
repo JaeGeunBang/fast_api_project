@@ -6,26 +6,23 @@
   
 - https://fastapi.tiangolo.com/tutorial/first-steps/
   
-- basic/
-  
+- basic/ 
   - main.py
-  - first step 
+    - first step 
     - path parameter
     - query parameter
     - request body
     - string validation
     - numeric validation
   - main2.py
-  - Body - Multiple Parameter 
-    
-  - Body - Field
-    - Body - Nested Models
+    - Body - Multiple Parameter 
+    - Body - Field
+      - Body - Nested Models
   - main3.py
-  - Schema Extra - Example
-    - Extra Data Type
+    - Schema Extra - Example
+      - Extra Data Type
   
 - advanced/
-
   - SQL Database with Peewee
 
   
