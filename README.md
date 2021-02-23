@@ -5,25 +5,6 @@
 - 아래 링크에서 하나씩 따라해볼것
   
 - https://fastapi.tiangolo.com/tutorial/first-steps/
-  
-- basic/ 
-  - main.py
-    - first step 
-    - path parameter
-    - query parameter
-    - request body
-    - string validation
-    - numeric validation
-  - main2.py
-    - Body - Multiple Parameter 
-    - Body - Field
-      - Body - Nested Models
-  - main3.py
-    - Schema Extra - Example
-      - Extra Data Type
-  
-- advanced/
-  - SQL Database with Peewee
 
   
   
